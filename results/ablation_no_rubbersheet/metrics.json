@@ -1,0 +1,56 @@
+{
+  "modalidade": "Íris",
+  "dataset_principal": "CASIA-Iris-V3 Interval",
+  "dataset_secundario": "IIT Delhi Iris",
+  "cnn": "ResNet-50",
+  "pre_treinamento": "ImageNet-1K (IMAGENET1K_V2)",
+  "camadas_congeladas": [
+    "conv1",
+    "bn1",
+    "layer1",
+    "layer2"
+  ],
+  "camadas_treinadas": [
+    "layer3",
+    "layer4",
+    "projection_head"
+  ],
+  "funcao_perda": "CosFace (s=30.0, m=0.35)",
+  "num_parametros_total": 24689217,
+  "num_parametros_treinaveis": 23244289,
+  "dimensao_embedding": 256,
+  "matching": "Cosine Similarity",
+  "use_rubber_sheet": false,
+  "seeds_avaliadas": [
+    42
+  ],
+  "threshold_congelado": 0.2101,
+  "threshold_congelado_mean": 0.2101,
+  "EER_mean": 0.1102,
+  "EER_std": 0.0,
+  "AUC_mean": 0.9601,
+  "AUC_std": 0.0,
+  "FMR_mean": 0.1297,
+  "FMR_std": 0.0,
+  "FNMR_mean": 0.0959,
+  "FNMR_std": 0.0,
+  "TAR_at_FAR_1pct_mean": 0.6873,
+  "TAR_at_FAR_1pct_std": 0.0,
+  "FTA_rate": 0.0,
+  "tempo_inferencia_ms": 3.8466,
+  "tamanho_modelo_mb": 94.51,
+  "hardware": "GPU: NVIDIA GeForce RTX 3050 | CPU: Intel64 Family 6 Model 158 Stepping 10, GenuineIntel (6 logical cores)",
+  "per_seed_results": [
+    {
+      "seed": 42,
+      "val_eer": 0.117262,
+      "threshold_congelado": 0.210102,
+      "EER": 0.110215,
+      "AUC": 0.960071,
+      "FMR": 0.129704,
+      "FNMR": 0.095878,
+      "TAR_at_FAR_1pct": 0.687276,
+      "tempo_inferencia_ms": 3.8466
+    }
+  ]
+}

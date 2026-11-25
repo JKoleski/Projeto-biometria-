@@ -1,0 +1,87 @@
+{
+  "experimento": "Experimento D — Robustez em 4 Níveis (CASIA-Iris-Interval)",
+  "seed": 42,
+  "threshold_congelado": 0.2037,
+  "levels": [
+    "original",
+    "baixa",
+    "media",
+    "alta"
+  ],
+  "gaussian_blur": {
+    "original": {
+      "sigma": 0.0,
+      "EER": 0.1407,
+      "AUC": 0.9362,
+      "FMR": 0.1467,
+      "FNMR": 0.1353,
+      "TAR_at_FAR_1pct": 0.6237,
+      "FTA_rate": 0.0
+    },
+    "baixa": {
+      "sigma": 1.5,
+      "EER": 0.1927,
+      "AUC": 0.8954,
+      "FMR": 0.7587,
+      "FNMR": 0.017,
+      "TAR_at_FAR_1pct": 0.4185,
+      "FTA_rate": 0.0
+    },
+    "media": {
+      "sigma": 3.0,
+      "EER": 0.3235,
+      "AUC": 0.7546,
+      "FMR": 0.9991,
+      "FNMR": 0.0,
+      "TAR_at_FAR_1pct": 0.164,
+      "FTA_rate": 1.0
+    },
+    "alta": {
+      "sigma": 5.0,
+      "EER": 0.3504,
+      "AUC": 0.725,
+      "FMR": 1.0,
+      "FNMR": 0.0,
+      "TAR_at_FAR_1pct": 0.1407,
+      "FTA_rate": 1.0
+    }
+  },
+  "biometric_occlusion": {
+    "original": {
+      "occlusion_ratio": 0.0,
+      "EER": 0.1407,
+      "AUC": 0.9362,
+      "FMR": 0.1467,
+      "FNMR": 0.1353,
+      "TAR_at_FAR_1pct": 0.6237,
+      "FTA_rate": 0.0
+    },
+    "baixa": {
+      "occlusion_ratio": 0.15,
+      "EER": 0.2437,
+      "AUC": 0.8501,
+      "FMR": 0.4034,
+      "FNMR": 0.1335,
+      "TAR_at_FAR_1pct": 0.3548,
+      "FTA_rate": 0.0
+    },
+    "media": {
+      "occlusion_ratio": 0.3,
+      "EER": 0.3293,
+      "AUC": 0.7295,
+      "FMR": 0.8746,
+      "FNMR": 0.0358,
+      "TAR_at_FAR_1pct": 0.1246,
+      "FTA_rate": 0.0
+    },
+    "alta": {
+      "occlusion_ratio": 0.45,
+      "EER": 0.4082,
+      "AUC": 0.6511,
+      "FMR": 0.9957,
+      "FNMR": 0.0036,
+      "TAR_at_FAR_1pct": 0.1183,
+      "FTA_rate": 0.0
+    }
+  }
+}

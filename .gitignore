@@ -1,0 +1,22 @@
+# Datasets e dados brutos
+data/
+handoff_para_grupo5/
+
+# Checkpoints e pesos de modelos
+checkpoints/
+*.pth
+*.pt
+*.onnx
+*.npz
+
+# Cache do Python e ambientes virtuais
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+.pytest_cache/
+.ipynb_checkpoints/
+.DS_Store
+Thumbs.db

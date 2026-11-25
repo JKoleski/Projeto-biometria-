@@ -1,0 +1,80 @@
+{
+  "modalidade": "Íris",
+  "dataset_principal": "CASIA-Iris-V3 Interval",
+  "dataset_secundario": "IIT Delhi Iris",
+  "cnn": "ResNet-50",
+  "pre_treinamento": "ImageNet-1K (IMAGENET1K_V2)",
+  "camadas_congeladas": [
+    "conv1",
+    "bn1",
+    "layer1",
+    "layer2"
+  ],
+  "camadas_treinadas": [
+    "layer3",
+    "layer4",
+    "projection_head"
+  ],
+  "funcao_perda": "CosFace (s=30.0, m=0.35)",
+  "num_parametros_total": 24689217,
+  "num_parametros_treinaveis": 23244289,
+  "dimensao_embedding": 256,
+  "matching": "Cosine Similarity",
+  "use_rubber_sheet": true,
+  "seeds_avaliadas": [
+    42,
+    123,
+    2026
+  ],
+  "threshold_congelado": 0.2038,
+  "threshold_congelado_mean": 0.1993,
+  "EER_mean": 0.1231,
+  "EER_std": 0.0125,
+  "AUC_mean": 0.948,
+  "AUC_std": 0.0091,
+  "FMR_mean": 0.1386,
+  "FMR_std": 0.0067,
+  "FNMR_mean": 0.1111,
+  "FNMR_std": 0.0171,
+  "TAR_at_FAR_1pct_mean": 0.675,
+  "TAR_at_FAR_1pct_std": 0.0382,
+  "FTA_rate": 0.0,
+  "tempo_inferencia_ms": 2.3677,
+  "tamanho_modelo_mb": 94.5,
+  "hardware": "GPU: NVIDIA GeForce RTX 3050 | CPU: Intel64 Family 6 Model 158 Stepping 10, GenuineIntel (6 logical cores)",
+  "per_seed_results": [
+    {
+      "seed": 42,
+      "val_eer": 0.130357,
+      "threshold_congelado": 0.203801,
+      "EER": 0.140681,
+      "AUC": 0.936208,
+      "FMR": 0.146729,
+      "FNMR": 0.135305,
+      "TAR_at_FAR_1pct": 0.623656,
+      "tempo_inferencia_ms": 3.6241
+    },
+    {
+      "seed": 123,
+      "val_eer": 0.139137,
+      "threshold_congelado": 0.191968,
+      "EER": 0.116487,
+      "AUC": 0.949419,
+      "FMR": 0.138665,
+      "FNMR": 0.099462,
+      "TAR_at_FAR_1pct": 0.68638,
+      "tempo_inferencia_ms": 1.7385
+    },
+    {
+      "seed": 2026,
+      "val_eer": 0.12619,
+      "threshold_congelado": 0.202222,
+      "EER": 0.112231,
+      "AUC": 0.958409,
+      "FMR": 0.130376,
+      "FNMR": 0.098566,
+      "TAR_at_FAR_1pct": 0.715054,
+      "tempo_inferencia_ms": 1.7404
+    }
+  ]
+}

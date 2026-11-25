@@ -1,0 +1,21 @@
+{
+  "checkpoint_prefix": "resnet50_casia_no_rubbersheet",
+  "use_rubber_sheet": false,
+  "seeds": [
+    42
+  ],
+  "val_eer_mean": 0.117411,
+  "val_eer_std": 0.0,
+  "val_eer_mean_percent": 11.741,
+  "val_eer_std_percent": 0.0,
+  "runs": [
+    {
+      "seed": 42,
+      "best_epoch": 4,
+      "best_val_eer": 0.1174107142866209,
+      "val_threshold": 0.21010205149560032,
+      "checkpoint_path": "checkpoints/resnet50_casia_no_rubbersheet_seed_42.pth",
+      "use_rubber_sheet": false
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "seed": 42,
+  "checkpoint_path": "checkpoints/resnet50_casia_seed_42.pth",
+  "use_rubber_sheet": true,
+  "val_threshold_from_ckpt": 0.20371854878388918,
+  "best_val_eer_from_ckpt": 0.1303571428571429,
+  "model_info": {
+    "architecture": "ResNet-50",
+    "pretrained_weights": "None",
+    "pretrained_dataset": "None",
+    "frozen_layers": [
+      "conv1",
+      "bn1",
+      "layer1",
+      "layer2"
+    ],
+    "trained_layers": [
+      "layer3",
+      "layer4",
+      "projection_head"
+    ],
+    "embedding_dim": 256,
+    "total_params": 24689217,
+    "trainable_params": 23244289,
+    "model_size_mb": 94.5
+  },
+  "timing": {
+    "total_samples": 2961,
+    "avg_cnn_inference_ms": 3.6241,
+    "avg_total_pipeline_ms": 35.2226
+  },
+  "hardware": {
+    "device_type": "cuda",
+    "gpu_name": "NVIDIA GeForce RTX 3050",
+    "cpu_name": "Intel64 Family 6 Model 158 Stepping 10, GenuineIntel (6 logical cores)",
+    "hardware_summary": "GPU: NVIDIA GeForce RTX 3050 | CPU: Intel64 Family 6 Model 158 Stepping 10, GenuineIntel (6 logical cores)",
+    "pytorch_version": "2.11.0+cu128"
+  },
+  "fta": {
+    "total_evaluated": 2961,
+    "fta_count": 0,
+    "fta_rate": 0.0,
+    "fta_percentage": 0.0,
+    "pupil_fallback_count": 0,
+    "limbus_fallback_count": 2,
+    "failures": []
+  }
+}

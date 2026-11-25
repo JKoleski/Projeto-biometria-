@@ -1,0 +1,31 @@
+modality: "Iris"
+grupo: 5
+primary_dataset: "CASIA-Iris-Interval"
+secondary_dataset: "IITD"
+data_dir: "data"
+casia_dir: "data/CASIA-Iris-Interval"
+iitd_dir: "data/IITD"
+
+architecture: "resnet50"
+pretrained_weights: "IMAGENET1K_V2"
+pretrained_dataset: "ImageNet-1K"
+embedding_dim: 256
+freeze_up_to: "layer2" # Congela conv1, bn1, layer1 e layer2; treina layer3, layer4 e projection head
+loss_type: "cosface"   # CosFace (s=30.0, m=0.35) otimizando similaridade de cosseno
+
+image_size: [224, 224]
+polar_height: 64
+polar_width: 512
+use_rubber_sheet: true
+
+batch_size: 64
+num_workers: 4
+epochs: 25
+lr_backbone: 0.0001
+lr_head: 0.0003
+weight_decay: 0.0001
+mixed_precision: true
+
+protocol_seed: 42
+seeds: [42, 123, 2026]
+impostor_ratio: 4

@@ -1,0 +1,39 @@
+{
+  "checkpoint_prefix": "resnet50_casia",
+  "use_rubber_sheet": true,
+  "seeds": [
+    42,
+    123,
+    2026
+  ],
+  "val_eer_mean": 0.131895,
+  "val_eer_std": 0.005396,
+  "val_eer_mean_percent": 13.189,
+  "val_eer_std_percent": 0.54,
+  "runs": [
+    {
+      "seed": 42,
+      "best_epoch": 7,
+      "best_val_eer": 0.1303571428571429,
+      "val_threshold": 0.20371854878388918,
+      "checkpoint_path": "checkpoints/resnet50_casia_seed_42.pth",
+      "use_rubber_sheet": true
+    },
+    {
+      "seed": 123,
+      "best_epoch": 23,
+      "best_val_eer": 0.1391369047604746,
+      "val_threshold": 0.19196844101061836,
+      "checkpoint_path": "checkpoints/resnet50_casia_seed_123.pth",
+      "use_rubber_sheet": true
+    },
+    {
+      "seed": 2026,
+      "best_epoch": 15,
+      "best_val_eer": 0.12619047619047621,
+      "val_threshold": 0.2022216647863388,
+      "checkpoint_path": "checkpoints/resnet50_casia_seed_2026.pth",
+      "use_rubber_sheet": true
+    }
+  ]
+}

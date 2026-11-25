@@ -1,0 +1,51 @@
+{
+  "experimento": "Experimento C — Cross-Dataset (Sem Fine-Tuning)",
+  "modalidade": "Íris",
+  "dataset_origem_treino": "CASIA-Iris-V3 Interval",
+  "dataset_destino_avaliacao": "IIT Delhi Iris (IITD)",
+  "cnn": "ResNet-50",
+  "pre_treinamento": "ImageNet-1K (IMAGENET1K_V2)",
+  "threshold_congelado_origem": 0.2038,
+  "EER_mean": 0.1803,
+  "EER_std": 0.008,
+  "AUC_mean": 0.8973,
+  "AUC_std": 0.0078,
+  "FMR_mean": 0.8725,
+  "FMR_std": 0.0245,
+  "FNMR_mean": 0.011,
+  "FNMR_std": 0.0012,
+  "TAR_at_FAR_1pct_mean": 0.5556,
+  "TAR_at_FAR_1pct_std": 0.0171,
+  "tempo_inferencia_ms": 2.3677,
+  "tamanho_modelo_mb": 94.5,
+  "hardware": "GPU: NVIDIA GeForce RTX 3050 | CPU: Intel64 Family 6 Model 158 Stepping 10, GenuineIntel (6 logical cores)",
+  "per_seed_results": [
+    {
+      "seed": 42,
+      "threshold_congelado_casia": 0.203801,
+      "EER": 0.187831,
+      "AUC": 0.890932,
+      "FMR_with_casia_threshold": 0.841176,
+      "FNMR_with_casia_threshold": 0.011905,
+      "TAR_at_FAR_1pct": 0.539683
+    },
+    {
+      "seed": 123,
+      "threshold_congelado_casia": 0.191968,
+      "EER": 0.169312,
+      "AUC": 0.908248,
+      "FMR_with_casia_threshold": 0.875294,
+      "FNMR_with_casia_threshold": 0.009259,
+      "TAR_at_FAR_1pct": 0.547619
+    },
+    {
+      "seed": 2026,
+      "threshold_congelado_casia": 0.202222,
+      "EER": 0.183862,
+      "AUC": 0.892706,
+      "FMR_with_casia_threshold": 0.900882,
+      "FNMR_with_casia_threshold": 0.011905,
+      "TAR_at_FAR_1pct": 0.579365
+    }
+  ]
+}

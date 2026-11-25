@@ -1,0 +1,30 @@
+{
+  "estudo": "Estudo de Ablação — Com vs. Sem Normalização Rubber Sheet de Daugman",
+  "dataset": "CASIA-Iris-V3 Interval",
+  "cnn": "ResNet-50",
+  "com_rubber_sheet": {
+    "use_rubber_sheet": true,
+    "EER_mean": 0.1231,
+    "EER_std": 0.0125,
+    "AUC_mean": 0.948,
+    "AUC_std": 0.0091,
+    "FMR_mean": 0.1386,
+    "FNMR_mean": 0.1111,
+    "TAR_at_FAR_1pct_mean": 0.675
+  },
+  "sem_rubber_sheet": {
+    "use_rubber_sheet": false,
+    "EER_mean": 0.1102,
+    "EER_std": 0.0,
+    "AUC_mean": 0.9601,
+    "AUC_std": 0.0,
+    "FMR_mean": 0.1297,
+    "FNMR_mean": 0.0959,
+    "TAR_at_FAR_1pct_mean": 0.6873
+  },
+  "impacto_rubber_sheet": {
+    "reducao_absoluta_eer_pontos_percentuais": -1.29,
+    "ganho_absoluto_auc": -0.0121,
+    "conclusao": "Ambos os modos atingem alta separabilidade (AUC ~ 0.95-0.96). Como as camadas iniciais (conv1 a layer2) da ResNet-50 permanecem congeladas com filtros 2D isotrópicos do ImageNet-1K, a ROI 2D circular direta (EER=11.02%, AUC=0.9601) preserva a geometria espacial esperada pelos filtros pré-treinados, enquanto o Rubber Sheet polar (EER=12.31%, AUC=0.9480) oferece invariância explícita à dilatação pupilar radial."
+  }
+}
