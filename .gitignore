@@ -1,6 +1,5 @@
 # Datasets e dados brutos
 data/
-handoff_para_grupo5/
 
 # Checkpoints e pesos de modelos
 checkpoints/

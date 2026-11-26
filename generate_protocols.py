@@ -368,7 +368,7 @@ def main() -> None:
     )
 
     # 4. Processa Segunda Base (IITD - Cross-Dataset)
-    grupo6_iitd_pairs = Path("handoff_para_grupo5/protocols/test_pairs.csv")
+    grupo6_iitd_pairs = Path(protocols_dir / "test_pairs_grupo_6.csv")
     if grupo6_iitd_pairs.exists():
         logger.info(
             f"Importando protocolo oficial de pares de teste da IITD do Grupo 6 ('{grupo6_iitd_pairs.as_posix()}') "

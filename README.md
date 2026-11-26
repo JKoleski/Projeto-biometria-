@@ -105,6 +105,7 @@ projeto/
 │   ├── genuine_pairs.csv
 │   ├── impostor_pairs.csv
 │   ├── test_pairs.csv
+│   ├── test_pairs_grupo_6.csv   # Pares oficiais de teste da IITD sincronizados com o Grupo 6 (4.156 pares)
 │   └── cross_dataset_test_pairs.csv
 └── results/                   # Métricas, scores e figuras geradas para o artigo científico
     ├── scores.csv
@@ -153,6 +154,8 @@ python run_all.py
    ```bash
    python generate_protocols.py
    ```
+
+   > **Protocolo Cross-Dataset sincronizado com o Grupo 6:** o script importa automaticamente os pares oficiais de teste da IITD compartilhados pelo Grupo 6 a partir de [`protocols/test_pairs_grupo_6.csv`](protocols/test_pairs_grupo_6.csv) (4.156 pares: 756 genuínos e 3.400 impostores) e os converte para `protocols/cross_dataset_test_pairs.csv`, garantindo pares 100% idênticos entre os Grupos 5 e 6 (Seção 11 / Regra 8 do documento de requisitos). Somente se esse arquivo estiver ausente é que o script gera pares próprios da IITD (fallback, `seed = 42`).
 
 2. **Gerar a figura de exemplos reais do pipeline (`results/pipeline_examples.png`):**
    ```bash
